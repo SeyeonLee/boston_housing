@@ -13722,7 +13722,8 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> K-Fold cross-validation training technique is a method to train a model k times and use different data set for test data each time. When we use grid search, we have to have fixed testing data. However, with k-fold, we can get more optimal model by comparing more various data set.</p>
+<p><strong>Answer: </strong> K-Fold cross-validation training technique is a method to train a model k times and use different data set for test data each time. 
+GridSearch itself has a limit, since it uses the whole dataset only one time. This leads the method to predict unseen data. By combining K-Fold cross validation with the Grid Search, we can train the model not only by differing hyperparametrs (GridSearch) but also by using the whole dataset K times (K-Fold)! This makes the algorithm more applicable to real-life data which includes various unseen data.</p>
 
 </div>
 </div>
